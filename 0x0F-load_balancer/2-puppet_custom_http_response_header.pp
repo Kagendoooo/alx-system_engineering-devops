@@ -11,12 +11,11 @@ file_line { 'install':
   line   => 'rewrite ^/redirect_me https://www.youtube.com permanent;',
 }
 
-file_line { 'http_header':
+file_line { 'install':
   ensure => present,
   path   => '/etc/nginx/sites-enabled/default',
   after  => 'server_name _;',
   line   => 'add_header X-Served-By $HOSTNAME;',
-  notify => Service['nginx'],
 }
 
 file { '/var/www/html/index.html':
