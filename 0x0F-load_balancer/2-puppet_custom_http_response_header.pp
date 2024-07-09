@@ -23,7 +23,7 @@ exec { 'redirect_me':
 }
 
 # Add custom HTTP header to the Nginx configuration
-exec { 'HTTP header':
+exec { 'http_header':
   command  => 'sed -i "25i\\       add_header X-Served-By \\$HOSTNAME;" /etc/nginx/sites-available/default',
   provider => 'shell',
   require  => Package['nginx'],
