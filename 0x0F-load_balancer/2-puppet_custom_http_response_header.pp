@@ -11,7 +11,7 @@ file_line { 'install':
   line   => 'rewrite ^/redirect_me https://www.youtube.com permanent;',
 }
 
-file_line { 'add_custom_header':
+file_line { 'http_header':
   ensure => present,
   path   => '/etc/nginx/sites-enabled/default',
   after  => 'server_name _;',
