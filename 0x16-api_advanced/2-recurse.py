@@ -4,6 +4,7 @@ returns a list containing the titles of all hot articles for a subreddit
 """
 import requests
 
+
 def recurse(subreddit, hot_list=[], after=None):
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {"User-Agent": "0x16.api.advanced/1.0"}
