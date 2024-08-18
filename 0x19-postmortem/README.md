@@ -37,5 +37,5 @@ The outage was caused by a misconfiguration in the database infrastructure durin
 3. **Monitoring Recovery**: As the rollback took effect, engineers closely monitored system logs and traffic patterns. By **23:30 UTC**, error rates began to drop, and services started recovering. Full restoration was confirmed at **23:38 UTC**.
 
 <div align="center">
-  <img src="images/reliefgif.mp4" alt="Mr Bean" />
+  <img src="images/relief.jpeg" alt="Robert Downy Junior" />
 </div>
