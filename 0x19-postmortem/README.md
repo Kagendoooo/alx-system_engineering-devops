@@ -24,7 +24,7 @@
 
 ## Root Cause
 
-The outage was caused by a misconfiguration in the database infrastructure during a routine update. The change was intended to improve traffic routing between GitHub services and the database by distributing the load more efficiently across various clusters. However, a critical error in the routing rules redirected traffic to incorrect endpoints, severing the connection between GitHub’s core services and its databases. This misrouting affected all services, leading to a complete loss of database connectivity. The error passed through pre-deployment checks undetected, which allowed the configuration to reach production and cause the outage.
+The outage was caused by a misconfiguration in the database infrastructure during a routine update. The change was intended to improve traffic routing between GitHub services and the database by distributing the load more efficiently across various clusters. However, a critical error in the routing rules redirected traffic to incorrect endpoints, severing the connection between GitHub’s core services and its databases. This misrouting affected all services, leading to a complete loss of database connectivity. The error passed through pre-deployment checks undetected, which allowed the configuration to reach production and cause the outage. Well, thank you so much Github for making my life come to a stop. A much needed break from staring at code.
 
 
 <div align="center">
@@ -36,6 +36,6 @@ The outage was caused by a misconfiguration in the database infrastructure durin
 2. **Rollback of the Configuration**: Upon identifying the misconfiguration, the team initiated a rollback to the previous stable configuration, which restored the correct traffic routing between the services and the database. The rollback was executed at **23:25 UTC**, and connectivity began to restore almost immediately.
 3. **Monitoring Recovery**: As the rollback took effect, engineers closely monitored system logs and traffic patterns. By **23:30 UTC**, error rates began to drop, and services started recovering. Full restoration was confirmed at **23:38 UTC**.
 
-The outage lasted a total of 36 minutes, during which GitHub services were completely inaccessible. The root cause was isolated to a specific traffic routing rule that was improperly applied, and the resolution was reverting the misconfiguration.
-
-
+<div align="center">
+  <img src="images/reliefgif.mp4" alt="Mr Bean" />
+</div>
