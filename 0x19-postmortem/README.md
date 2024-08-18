@@ -1,4 +1,4 @@
 # 🚨Postmortem Report: GitHub Outage Incident🚨
 <div align="center">
-  <img src="GITCRASH.jpeg" alt="GITCRASH" />
+  <img src="images/GITCRASH.jpeg" alt="GITCRASH" />
 </div>
