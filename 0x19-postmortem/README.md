@@ -39,3 +39,15 @@ The outage was caused by a misconfiguration in the database infrastructure durin
 <div align="center">
   <img src="images/relief.jpeg" alt="Robert Downy Junior" />
 </div>
+
+## Corrective and Preventative Measures
+To prevent similar outages in the future, we will implement the following measures:
+
+- **Stricter review of configuration changes**: Additional automated tests will be introduced for database traffic routing configurations before they are applied.
+- **Enhanced monitoring**: Additional monitoring will be set up to detect abnormal database traffic patterns and connectivity issues in real-time.
+- **Improved rollback mechanisms**: Faster rollback procedures will be created to allow for quicker recovery from configuration issues.
+  
+### TODOs:
+- Add automated validation for database routing changes.
+- Implement simulation testing environments for database configurations.
+- Update the incident response playbook with improved rollback processes.
